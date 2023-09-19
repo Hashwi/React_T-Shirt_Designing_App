@@ -1,9 +1,11 @@
+// eslint-disable-next-line no-unused-vars
 import React from 'react'
 import { useSnapshot } from 'valtio';
 
 import state from '../store';
 import { getContrastingColor } from '../config/helpers';
 
+// eslint-disable-next-line react/prop-types
 const CustomButton = ({ type, title, customStyles, handleClick }) => {
   const snap = useSnapshot(state);
 
@@ -17,7 +19,7 @@ const CustomButton = ({ type, title, customStyles, handleClick }) => {
       return {
         borderWidth: '1px',
         borderColor: snap.color,
-        color: snap.color
+        color: '#fff'
       }
     }
   }
