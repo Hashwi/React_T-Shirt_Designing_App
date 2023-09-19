@@ -6,7 +6,6 @@ const App = () => (
   <>
     <main className="app transition-all ease-in">
       <div>
-        <h1 className="head-text">React App</h1>
         <Home />
         <Canvas />
         <Customizer />
